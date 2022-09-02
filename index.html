@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>christina</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="navbar">
+    <div class="container">
+        <a class="logo" href="index.html">Remember<span>That</span></a>
+        <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="open navigation">
+        <nav>
+            <img id="mobile-exit" class="mobile-menu-exit" src="images/close.svg" alt="close navigation">
+            <ul class="primary-nav">
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+               
+            </ul>
+          
+            <ul class="secondary-nav">
+                <li class="contact"><a href="#">contact</a></li>
+                <li><a href="go-to-premium">Go Premium</a></li>        
+            </ul>
+        </nav>
+    </div>
+
+</div>
+
+<section  class="hero">
+    <div class="container">
+    <div class="left-col">
+        <p class="subhead">
+            it's nitty &amp; Gritty
+        </p>
+        <h1>A Task App That Doesn't Stink</h1>
+        <div class="hero-cta">
+            <a href="#" class="primary-cta">try for free</a>
+            <a href="#" class="watch-video-cta">
+                <img src="images/watch.svg" alt="watch a video">watch a video </a>
+
+        </div>
+        
+
+    </div>
+      <img src="images/photo-1566275529824-cca6d008f3da.jpg"  class="hero-img" alt="illustration">
+    </div>
+
+</section>
+
+<section class="features-section">
+    <div class="container">
+        <ul class="features-list">
+            <li>  unlimited tasks</li>
+            <li>  sms tasks reminder</li>
+            <li>  confetti explosiond upon tasks</li>
+            <li>  social media annnouncemenrs</li>
+            <li>  reall time collaboration</li>
+            <li>  other awesome freatures</li>
+        </ul>
+        <img src="images/photo2.jpg" class="p2-img" alt="women holding camera">
+
+    </div>
+
+</section>
+
+<section class="testimonials-section">
+    <div class="container">
+        <ul>
+            <li>
+                <img src="images/p1.jpg" alt="camera">
+                <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit."</blockquote>
+                <cite>-jane</cite>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <img src="images/p1.jpg" alt="camera">
+                <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit."</blockquote>
+                <cite>-jane</cite>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <img src="images/p1.jpg" alt="camera">
+                <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit."</blockquote>
+                <cite>-jane</cite>
+            </li>
+        </ul>
+    </div>
+
+</section>
+
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-left">
+            <h2>contact</h2>
+            <form action="">
+                <label for="name">name</label>
+                <input type="text" id="name" name="name">
+
+                <label for="messaga">mesage</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                
+                <input type="submit" class="send-message-cta" value="send messgae">
+
+            </form>
+
+        </div>
+        <div class="contact-right">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39522.0370107416!2d-0.31171554511150185!3d51.74899548932506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48763f38ece24dd9%3A0xcb0e1d00b8f6d187!2sVerulamium%20Museum!5e0!3m2!1sen!2sin!4v1662098134909!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" frameborder="0"></iframe>
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+    const mobileBtn = document.getElementById('mobile-cta')
+    nav = document.querySelector('nav')
+    mobileBtnExit = document.getElementById('mobile-exit');
+
+
+
+    mobileBtn.addEventListener('click', ()=>{
+        nav.classList.add('menu-btn');
+    })
+
+    mobileBtnExit.addEventListener('click', ()=>{
+        nav.classList.remove('menu-btn');
+    })
+</script>
+</body>
+</html>
