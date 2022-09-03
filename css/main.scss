@@ -30,6 +30,8 @@ body {
         display: flex;
         place-content: space-between;
     }
+
+   
     .mobile-menu{
         cursor: pointer;
         }
@@ -43,6 +45,8 @@ ul {
     margin: 0;
     padding: 0;
 }
+
+
 section {
     padding: 5em 2em;
 
@@ -76,14 +80,15 @@ section {
     }
     .watch-video-cta{
         display: block;
-        margin-top: 2em;
-    }
-    img{
-        margin-right: 6px;
-        vertical-align: middle;
-        width: 30px;
+        margin-top: 1em;
     
-     }
+    img{
+        margin-right: 5px;
+        // vertical-align: middle;
+        // width: 30px;
+    
+       }
+    }
 
 }
 .hero-img{
@@ -113,21 +118,22 @@ section.features-section{
             height: 20px;
             background-image: url('../images/bullet.svg');
             background-size: contain;
-            margin-right: 5em;
+            margin-right: .5em;
         }
        }
-    }
-    .p2-img{
-        width: 100%;
-        margin-top: 3em;
+       .features-section img {
+        display: none;
+       }
+     
     }
 }
-
-
-.testimonials-section {
+  
+section.testimonials-section {
     background: var(--primary-color);
     color: white;
-    ul {
+    ul{
+
+    
         li {
             background: #006bd6;
             text-align: center;
@@ -135,10 +141,11 @@ section.features-section{
             width: 80%;
             margin: 0 auto 5em auto;
             border-radius: 1em;
+
             img{
             width: 5em;
             height:5em;
-            border: 5em solid #006bd6;
+            border: .5em solid #006bd6;
             border-radius: 50%;
             margin-top: -4.5em;
 
@@ -147,7 +154,7 @@ section.features-section{
         }
     }
 }
-    .contact-section{
+    section.contact-section{
     h2 {
         font-size: 2em;
 
@@ -178,11 +185,17 @@ section.features-section{
         width: unset;
         cursor: pointer;
     }
+  }
+
+  .contact-right{
     iframe{
         width: 100%;
         height: 300px;
+        background: #20272e;
+        
     }
 }
+
 nav.menu-btn{
     display: block;
 }
@@ -215,6 +228,8 @@ nav{
 }
 .mobile-menu-exit {
     float: right;
+    margin: .5em;
+    cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {
@@ -305,20 +320,22 @@ nav{
         margin-left: 5em;
 
         li {
-            font-size: 1,4em;
+            font-size: 1.4em;
             &::before {
                 width: 30px;
                 height: 30px;
             }
         }
+
+        .features-section img {
+            display: block;
+            position: absolute;
+            right: 0;
+            width: auto;
+            bottom: -40em;
+        }
     }
-    .features-section img {
-        display: block;
-        position: absolute;
-        right: 0;
-        width: 350px;
-        bottom: -2em;
-    }
+ 
 
 
 
@@ -343,30 +360,31 @@ nav{
         height: 100%;
 
         iframe {
-            height: 100;
+            height: 100%;
         }
     }
 }
 
-@media only screen and (min-width: 1450px) {
-.features-section{
-    &::before {
-        content: "";
-        position: absolute;
-        width: 10%;
-        height: 20em;
-        background: var(--primary-color);
-        left: 0;
-        top: -4em;
-    }
-    &::after {
-        content: "";
-        position: absolute;
-        width: 200px;
-        height: 20em;
-        background: var(--primary-color);
-        left: 4.5em;
-        top: 2em;
-    }
-}
-}
+// @media only screen and (min-width: 1450px) {
+// .features-section{
+//     &::before {
+//         content: "";
+//         position: absolute;
+//         width: 10%;
+//         height: 20em;
+//         background: var(--primary-color);
+//         left: 0;
+//         top: -4em;
+//     }
+//     &::after {
+//         content: "";
+//         position: absolute;
+//         width: 200px;
+//         height: 20em;
+//         background: var(--primary-color);
+//         left: 4.5em;
+//         top: 2em;
+//     }
+// }
+//   }
+

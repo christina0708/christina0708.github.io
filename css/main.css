@@ -74,12 +74,10 @@ section {
 }
 .left-col .watch-video-cta {
   display: block;
-  margin-top: 2em;
+  margin-top: 1em;
 }
-.left-col img {
-  margin-right: 6px;
-  vertical-align: middle;
-  width: 30px;
+.left-col .watch-video-cta img {
+  margin-right: 5px;
 }
 
 .hero-img {
@@ -111,18 +109,17 @@ section.features-section ul.features-list li:before {
   height: 20px;
   background-image: url("../images/bullet.svg");
   background-size: contain;
-  margin-right: 5em;
+  margin-right: 0.5em;
 }
-section.features-section .p2-img {
-  width: 100%;
-  margin-top: 3em;
+section.features-section ul.features-list .features-section img {
+  display: none;
 }
 
-.testimonials-section {
+section.testimonials-section {
   background: var(--primary-color);
   color: white;
 }
-.testimonials-section ul li {
+section.testimonials-section ul li {
   background: #006bd6;
   text-align: center;
   padding: 2em 1em;
@@ -130,23 +127,23 @@ section.features-section .p2-img {
   margin: 0 auto 5em auto;
   border-radius: 1em;
 }
-.testimonials-section ul li img {
+section.testimonials-section ul li img {
   width: 5em;
   height: 5em;
-  border: 5em solid #006bd6;
+  border: 0.5em solid #006bd6;
   border-radius: 50%;
   margin-top: -4.5em;
 }
 
-.contact-section h2 {
+section.contact-section h2 {
   font-size: 2em;
 }
-.contact-section label {
+section.contact-section label {
   display: block;
   font-size: 1.2em;
   margin-bottom: 0.5em;
 }
-.contact-section input, .contact-section textarea {
+section.contact-section input, section.contact-section textarea {
   width: 100%;
   padding: 0.8em;
   margin-bottom: 1em;
@@ -154,7 +151,7 @@ section.features-section .p2-img {
   border: 1px solid grey;
   box-sizing: border-box;
 }
-.contact-section input[type=submit] {
+section.contact-section input[type=submit] {
   background-color: var(--primary-color);
   color: white;
   font-weight: bold;
@@ -167,9 +164,11 @@ section.features-section .p2-img {
   width: unset;
   cursor: pointer;
 }
-.contact-section iframe {
+
+.contact-right iframe {
   width: 100%;
   height: 300px;
+  background: #20272e;
 }
 
 nav.menu-btn {
@@ -203,6 +202,8 @@ nav li a:hover {
 
 .mobile-menu-exit {
   float: right;
+  margin: 0.5em;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {
@@ -284,18 +285,18 @@ nav li a:hover {
     margin-left: 5em;
   }
   ul.features-list li {
-    font-size: 1, 4em;
+    font-size: 1.4em;
   }
   ul.features-list li::before {
     width: 30px;
     height: 30px;
   }
-  .features-section img {
+  ul.features-list .features-section img {
     display: block;
     position: absolute;
     right: 0;
-    width: 350px;
-    bottom: -2em;
+    width: auto;
+    bottom: -40em;
   }
   .testimonials-section ul {
     display: flex;
@@ -317,26 +318,6 @@ nav li a:hover {
     height: 100%;
   }
   .contact-right iframe {
-    height: 100;
-  }
-}
-@media only screen and (min-width: 1450px) {
-  .features-section::before {
-    content: "";
-    position: absolute;
-    width: 10%;
-    height: 20em;
-    background: var(--primary-color);
-    left: 0;
-    top: -4em;
-  }
-  .features-section::after {
-    content: "";
-    position: absolute;
-    width: 200px;
-    height: 20em;
-    background: var(--primary-color);
-    left: 4.5em;
-    top: 2em;
+    height: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
