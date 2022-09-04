@@ -47,6 +47,7 @@ ul {
 }
 
 
+
 section {
     padding: 5em 2em;
 
@@ -100,12 +101,14 @@ section {
 section.features-section{
     background: #20272e;
     color: white;
+}
     ul.features-list{
        margin: 0; 
        padding-left: 1em;
        display: grid;
        grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-       li{
+
+       li { 
         font-size: 1.1em;
         margin-bottom: 1em;
         margin-left: 2em;
@@ -120,20 +123,20 @@ section.features-section{
             background-size: contain;
             margin-right: .5em;
         }
-       }
-       .features-section img {
-        display: none;
-       }
+    }
+    .features-section 
+    img {
+     display: none;
      
     }
-}
-  
-section.testimonials-section {
+ }
+     
+     
+    
+
+.testimonials-section {
     background: var(--primary-color);
     color: white;
-    ul{
-
-    
         li {
             background: #006bd6;
             text-align: center;
@@ -153,8 +156,9 @@ section.testimonials-section {
            } 
         }
     }
-}
-    section.contact-section{
+
+
+    .contact-section{
     h2 {
         font-size: 2em;
 
@@ -365,26 +369,27 @@ nav{
     }
 }
 
-// @media only screen and (min-width: 1450px) {
-// .features-section{
-//     &::before {
-//         content: "";
-//         position: absolute;
-//         width: 10%;
-//         height: 20em;
-//         background: var(--primary-color);
-//         left: 0;
-//         top: -4em;
-//     }
-//     &::after {
-//         content: "";
-//         position: absolute;
-//         width: 200px;
-//         height: 20em;
-//         background: var(--primary-color);
-//         left: 4.5em;
-//         top: 2em;
-//     }
-// }
-//   }
+@media only screen and (min-width: 1450px) {
+.features-section{
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 10%;
+        height: 20em;
+        background: var(--primary-color);
+        left: 0;
+        top: -4em;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 20em;
+        background: url('https://assets.codepen.io/2621168/dots.svg') no-repeat;
+        left: 4.5em;
+        top: 2em;
+    }
+}
+  }
 

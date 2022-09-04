@@ -89,19 +89,20 @@ section.features-section {
   background: #20272e;
   color: white;
 }
-section.features-section ul.features-list {
+
+ul.features-list {
   margin: 0;
   padding-left: 1em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 }
-section.features-section ul.features-list li {
+ul.features-list li {
   font-size: 1.1em;
   margin-bottom: 1em;
   margin-left: 2em;
   position: relative;
 }
-section.features-section ul.features-list li:before {
+ul.features-list li:before {
   content: "";
   left: -2em;
   position: absolute;
@@ -111,15 +112,16 @@ section.features-section ul.features-list li:before {
   background-size: contain;
   margin-right: 0.5em;
 }
-section.features-section ul.features-list .features-section img {
+ul.features-list .features-section img {
   display: none;
+  width: 30%;
 }
 
-section.testimonials-section {
+.testimonials-section {
   background: var(--primary-color);
   color: white;
 }
-section.testimonials-section ul li {
+.testimonials-section li {
   background: #006bd6;
   text-align: center;
   padding: 2em 1em;
@@ -127,7 +129,7 @@ section.testimonials-section ul li {
   margin: 0 auto 5em auto;
   border-radius: 1em;
 }
-section.testimonials-section ul li img {
+.testimonials-section li img {
   width: 5em;
   height: 5em;
   border: 0.5em solid #006bd6;
@@ -135,15 +137,15 @@ section.testimonials-section ul li img {
   margin-top: -4.5em;
 }
 
-section.contact-section h2 {
+.contact-section h2 {
   font-size: 2em;
 }
-section.contact-section label {
+.contact-section label {
   display: block;
   font-size: 1.2em;
   margin-bottom: 0.5em;
 }
-section.contact-section input, section.contact-section textarea {
+.contact-section input, .contact-section textarea {
   width: 100%;
   padding: 0.8em;
   margin-bottom: 1em;
@@ -151,7 +153,7 @@ section.contact-section input, section.contact-section textarea {
   border: 1px solid grey;
   box-sizing: border-box;
 }
-section.contact-section input[type=submit] {
+.contact-section input[type=submit] {
   background-color: var(--primary-color);
   color: white;
   font-weight: bold;
@@ -319,5 +321,28 @@ nav li a:hover {
   }
   .contact-right iframe {
     height: 100%;
+  }
+}
+@media only screen and (min-width: 1450px) {
+  .features-section {
+    position: relative;
+  }
+  .features-section::before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 20em;
+    background: var(--primary-color);
+    left: 0;
+    top: -4em;
+  }
+  .features-section::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 20em;
+    background: url("https://assets.codepen.io/2621168/dots.svg") no-repeat;
+    left: 4.5em;
+    top: 2em;
   }
 }/*# sourceMappingURL=main.css.map */
